@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Apply a background color and font styles */
+body {
+  background-color: #f4f4f4;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the header */
+.header {
+  background-color: #1b4a80;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the list of fixtures */
+.fixture-list {
+  margin-top: 20px;
+}
+
+/* Style individual fixtures */
+.fixture {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixture img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.fixture p {
+  margin: 5px 0;
+}
+
+/* Style the score */
+.score {
+  font-weight: bold;
+}
+
+/* Style links */
+a {
+  color: #1b4a80;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add your responsive styles here */
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller devices */
+
+  .text-3xl {
+    font-size: 2rem;
+  }
+
+  /* Fixture component styles */
+  .min-w-full {
+    width: 100%;
+  }
+
+  .p-1 {
+    padding: 0.5rem;
+  }
+
+  .bg-gray-200 {
+    background-color: #f9f9f9;
+  }
+
+  .border-b {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .text-xl {
+    font-size: 1.25rem;
+  }
+
+  .w-12,
+  .h-12 {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* Additional styles for fixture layout */
+  .flex {
+    display: flex;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+  }
+}
+
+.header {
+  position: fix;
+  z-index: 999; /* Ensure it's above other content */
+}
